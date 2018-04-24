@@ -24,5 +24,5 @@ class QuadraticEquationTestCase(unittest.TestCase):
         self.assertIsNone(root2)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
