@@ -1,21 +1,34 @@
 # Решатель квадратных уравнений
 
-Скрипт тестирует метод, который в свою очередь решает квадратные уравнения
-Метод импортируется в тестируемый класс таким образом:
-```bash
-from quadratic_equation import get_roots
-```
+Скрипт ```python tests.py ``` тестирует метод ```python get_roots() ```, который в свою очередь решает квадратные уравнения
 
 # Как использовать
 
 В скрипте tests.py есть несколько методов для проверки:
  
-```bash
-def test_solves_real_roots(self) #Проверяет правильно ли находятся корни если дскриминант равен нулю
-def test_first_root_less_than_second(self) #Проверяет корни, если дискриминант положительное число
-def test_second_root_is_none_if_one_solution(self) #Проверяет, что при нулевом дискриминнте один из корней равен None, а второй какому-то числу
-def test_returns_none_for_complex_solution #Проверяет(self), что при комплексных корнях, ответ None
+```python
+def test_solves_real_roots(self) 
 ```
+Проверяет правильно ли находятся корни если дскриминант равен нулю
+```python
+def test_first_root_less_than_second(self) 
+```
+Проверяет корни, если дискриминант положительное число
+```python
+def test_second_root_is_none_if_one_solution(self) 
+```
+Проверяет, что при нулевом дискриминнте один из корней равен None, а второй какому-то числу
+```python
+def test_returns_none_for_complex_solution(self)
+```
+Проверяет, что при комплексных корнях, ответ None
+
+Заупустить метод для решения квадратичного уравнения можно таким образом:
+```python
+from quadratic_equation.py import get_roots
+root1, root2 = get_roots(a, b, c)
+```
+где a, b, c -  коэфициенты уравнения
 
 # Как запустить
 

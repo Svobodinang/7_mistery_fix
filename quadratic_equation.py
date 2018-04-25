@@ -1,5 +1,4 @@
 from math import sqrt
-import sys
 
 
 def get_roots(a, b, c):
@@ -12,6 +11,3 @@ def get_roots(a, b, c):
         return root1, None
     else:
         return root1, root2
-
-if __name__ == "__main__":
-    pass
